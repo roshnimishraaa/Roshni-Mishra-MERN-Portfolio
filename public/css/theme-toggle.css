@@ -1,0 +1,284 @@
+/* Theme Toggle Button Styles */
+.nav-item .theme-toggle-btn {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.nav-item .theme-toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    transform: rotate(20deg);
+}
+
+.nav-item .theme-toggle-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(118, 109, 255, 0.3);
+}
+
+.theme-toggle-btn i {
+    font-size: 18px;
+    transition: all 0.3s ease;
+    line-height: 1;
+}
+
+/* Align theme toggle with nav items */
+.navbar-nav .nav-item:last-child {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/* Dark Mode Variables */
+:root {
+    --bg-primary: #fff;
+    --bg-secondary: #f9f9ff;
+    --text-primary: #222222;
+    --text-secondary: #777777;
+    --border-color: #eee;
+    --card-bg: #fff;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+    --bg-primary: #0d1117;
+    --bg-secondary: #161b22;
+    --text-primary: #f0f6fc;
+    --text-secondary: #c9d1d9;
+    --border-color: #30363d;
+    --card-bg: #1c2128;
+    --shadow: rgba(0, 0, 0, 0.5);
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .header_area {
+    background: #16213e;
+}
+
+[data-theme="dark"] .header_area .navbar .nav .nav-item .nav-link {
+    color: #eee;
+}
+
+[data-theme="dark"] .home_banner_area {
+    background: linear-gradient(to right, #16213e, #0f3460);
+}
+
+/* Dark mode for banner box container */
+[data-theme="dark"] .home_banner_area .box_1620 {
+    background: var(--card-bg) !important;
+    box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Profile Image Styling */
+.home_banner_area .banner_content .media .d-flex img {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+.home_banner_area .banner_content .media .d-flex img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode profile image styling */
+[data-theme="dark"] .home_banner_area .banner_content .media .d-flex img {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .home_banner_area .banner_content .media .d-flex img:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Dark mode for banner text - using !important to override inline styles */
+[data-theme="dark"] .home_banner_area .banner_inner .banner_content h3,
+[data-theme="dark"] .personal_text h3 {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .home_banner_area .banner_inner .banner_content h4,
+[data-theme="dark"] .personal_text h4 {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .home_banner_area .banner_inner .banner_content h6,
+[data-theme="dark"] .personal_text h6 {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .home_banner_area .banner_inner .banner_content p,
+[data-theme="dark"] .personal_text p {
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .home_banner_area .banner_inner .banner_content .list li a,
+[data-theme="dark"] .personal_text .basic_info li a {
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .personal_text .basic_info li a i {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .welcome_area {
+    background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .welcome_area .welcome_text h4,
+[data-theme="dark"] .welcome_area .welcome_text h3 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .welcome_area .welcome_text p {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .tools_expert .skill_main .skill_item h4 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .tools_expert .skill_main .skill_item .progress {
+    background: #333;
+}
+
+[data-theme="dark"] .feature_area {
+    background: var(--bg-primary);
+}
+
+[data-theme="dark"] .feature_area .feature_item {
+    background: var(--card-bg);
+    box-shadow: 0px 10px 30px 0px var(--shadow);
+}
+
+[data-theme="dark"] .feature_area .feature_item h4 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .feature_area .feature_item p {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .portfolio_area {
+    background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .portfolio_area .filters ul li {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .portfolio_area .filters ul li.active {
+    color: #766dff;
+}
+
+[data-theme="dark"] .tabs_inner {
+    background: linear-gradient(to right, #16213e, #0f3460);
+}
+
+[data-theme="dark"] .testimonials_area {
+    background: var(--bg-primary);
+}
+
+[data-theme="dark"] .testi_item {
+    background: var(--card-bg);
+}
+
+[data-theme="dark"] .testi_item h4 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .testi_item p {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .footer_area {
+    background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .footer_area .f_widget h3 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .footer_area .f_widget p {
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .footer_area .social_widget .list li a {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .footer_area .social_widget .list li a:hover {
+    color: #766dff;
+}
+
+/* Dark mode for sections */
+[data-theme="dark"] section {
+    background: var(--bg-primary);
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] p {
+    color: var(--text-secondary);
+}
+
+/* Dark mode for cards and boxes */
+[data-theme="dark"] .card,
+[data-theme="dark"] .box {
+    background: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+/* Dark mode for forms */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+    background: var(--card-bg);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+    color: var(--text-secondary);
+}
+
+/* Smooth transition for theme change */
+body,
+section,
+.card,
+.box,
+input,
+textarea,
+select,
+h1, h2, h3, h4, h5, h6,
+p {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+

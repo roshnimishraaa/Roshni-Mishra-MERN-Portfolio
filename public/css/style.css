@@ -2594,7 +2594,7 @@ h6 {
     transform: translateX(-50%);
     top: -5px; }
   .tabs_inner .tab-content .tab-pane .list li {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     position: relative; }
     .tabs_inner .tab-content .tab-pane .list li span {
       height: 15px;
@@ -2628,7 +2628,9 @@ h6 {
       color: #fff;
       font-size: 21px;
       text-transform: uppercase;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      line-height: 1.4;
+      word-wrap: break-word; }
     .tabs_inner .tab-content .tab-pane .list li .media .media-body p {
       color: rgba(255, 255, 255, 0.75);
       margin-bottom: 0px; }
